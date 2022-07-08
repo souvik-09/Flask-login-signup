@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link href="../static/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="signupFrm">
+        <formm action="" class="form">
+          <h1 class="title">Sign up</h1>
+          <h3 class="h3">Create an account to get started!</h3>
+          <form action="{{url_for('success')}}" method="POST">
+    
+          <div class="inputContainer">
+            <input type="text" class="input" name= "username_name" placeholder="a">
+            <label for="" class="label">Username</label>
+          </div>
+    
+          <div class="inputContainer">
+            <input type="text" class="input" name="email_name" placeholder="a">
+            <label for="" class="label">Email</label>
+          </div>
+    
+          <div class="inputContainer">
+            <input type="password" class="input" name="password_name" placeholder="a">
+            <label for="" class="label">Password</label>
+          </div>
+    
+          <div class="inputContainer">
+            <input type="password" class="input" name = "cpassword_name" placeholder="a">
+            <label for="" class="label">Confirm Password</label>
+          </div>
+    
+          <input type="submit" class="submitBtn" value="Sign up">
+          <div class="already"> <p>Already have an account?</p></div>
+          <li class="nav-item"><a  href="/login">Login here</a></li>
+        </formm>
+          </form> 
+      </div>
+</body>
+</html>

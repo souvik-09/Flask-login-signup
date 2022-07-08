@@ -1,0 +1,25 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">username</th>
+        <th scope="col">email</th>
+        <th scope="col">password</th>
+        <th scope="col">cpassword</th>
+      </tr>
+    </thead>
+      {% for data in login %}
+      <tr>
+      <th scope="row">{{data.id}}</th>
+      <td>{{data.username}}
+      </td>
+      <td>{{data.email}}
+      </td>
+      <td>{{data.password}}
+      </td>
+      <td>{{data.cpassword}}
+      </td>
+      </tr>
+      {% endfor %}
+  </table>
+  
